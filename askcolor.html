@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Color Flipper || Simple
+    </title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-center">
+        <h4>color flipper/chooser</h4>
+        <ul class="nav-links">
+          <li><a href="hex.html">hex</a></li>
+          <li>
+            <a href="askcolor.html">Choose Color</a>
+          </li>
+          <li><a href="index.html">simple</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <h2>background color : </h2>
+        <input type="color" class="btn btn-hero"  id="colorInputColor" >
+        <input type="text" class="btn btn-hero"  id="colorInputText" >
+
+       
+        <input type="button" class=" btn-hero" id="btn" value="Click to change Color" placeholder="Enter Color/Get Color" onclick="changeColor()">
+
+      </div>
+    </main>
+    <!-- javascript -->
+    <script>
+        function changeColor(){
+            let color = document.getElementById("colorInputColor").value;
+            let colorcolor = document.getElementById("colorInputText").value;
+            document.body.style.backgroundColor=color;
+        
+            document.body.style.backgroundColor=color;
+            document.body.style.backgroundColor=colorcolor;
+    document.getElementById("colorInputText").value=color;
+}
+    </script>
+  </body>
+</html>
